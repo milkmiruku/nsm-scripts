@@ -9,4 +9,4 @@ if ! [ -a "$NSM_CLIENT_ID.midi" ]; then
     echo 'creating empty midi file'
     cp "$HOME/.local/share/sequencer64/blank.midi" "$NSM_CLIENT_ID.midi"
 fi
-exec seq64 -o wid=3x1,f -o sets=4x12 --jack-transport --jack-master --jack-start-mode 0 --jack-midi --record-by-channel "$NSM_CLIENT_ID.midi"
+exec seq64 -o wid=2x1,f -o sets=4x12 --jack-transport --jack-master --jack-start-mode 0 --jack-midi --record-by-channel "$NSM_CLIENT_ID.midi"
