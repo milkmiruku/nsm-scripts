@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -z "$NSM_SESSION_NAME" ] && [-z "$RAY_SESSION_NAME" ]; then
+if [ -z "$NSM_SESSION_NAME" ] && [ -z "$RAY_SESSION_NAME" ]; then
     echo 'must be run under nsm-proxy'
     exit 0
 fi
